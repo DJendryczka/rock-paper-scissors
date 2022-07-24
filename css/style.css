@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.main {
+  width: 550px;
+  max-width: 550px;
+  height: 650px;
+  max-height: 650px;
+  background-color: #e7eef3;
+  border: 1px solid black;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFNBQVM7RUFDVCxVQUFVO0FDQ2Q7O0FEQ0E7RUFDSSxzQkFBc0I7RUFDdEIsYUFBYTtFQUNiLHVCQUF1QjtFQUN2QixtQkFBbUI7RUFDbkIsYUFBYTtBQ0VqQjs7QURBQTtFQUNJLGtCQUFrQjtFQUNsQixlQUFlO0FDR25COztBREFBO0VBQ0ksWUFBWTtFQUNaLGdCQUFnQjtFQUNoQixhQUFhO0VBQ2IsaUJBQWlCO0VBQ2pCLHlCQUFvQztFQUNwQyx1QkFBdUI7QUNHM0IiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

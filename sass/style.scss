@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.main{
+    width: 550px;
+    max-width: 550px;
+    height: 650px;
+    max-height: 650px;
+    background-color: rgb(231, 238, 243);
+    border: 1px solid black;
+}

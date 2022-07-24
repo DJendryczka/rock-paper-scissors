@@ -1,11 +1,17 @@
 
-const rock = 1
-const paper = 2
-const scissors = 3
+
 
 function getComputerChoise(){
     let computerChoise = ''
     computerChoise = Math.floor(Math.random() * 3) + 1
-    console.log(computerChoise)
+    
+    if(computerChoise === 1){
+        return 'Rock'
+    }else if(computerChoise === 2){
+        return 'Paper'
+    }else{
+        return 'Scossors'
+    }
 }
 getComputerChoise()
+console.log(getComputerChoise())

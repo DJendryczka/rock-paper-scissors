@@ -1,3 +1,13 @@
+let playerSelection
+
+const paper = document.getElementById('paper')
+const rock = document.getElementById('rock')
+const scissors = document.getElementById('scissors')
+
+
+
+
+/* Computer makin a choise */
 function getComputerChoise(){
     let computerChoise = ''
     computerChoise = Math.floor(Math.random() * 3) + 1
@@ -10,34 +20,66 @@ function getComputerChoise(){
         return 'Scissors'
     }
 }
-let computerSelection = getComputerChoise()
 
-console.log(`Comp selection is ${computerSelection}`)
 
-function playGame(playerSelection, computerSelection){
 
-    if(playerSelection === computerSelection){
+paper.addEventListener('click', ()=>{
+    playerSelection = 'Paper'
+    /* Display computer choise */
+    let computerSelection = getComputerChoise()
+    console.log(` Player selection is ${playerSelection} Comp selection is ${computerSelection}`)
+    playGame(playerSelection, computerSelection)
+})
+rock.addEventListener('click', ()=>{
+    playerSelection = 'Rock'
+    /* Display computer choise */
+    let computerSelection = getComputerChoise()
+    console.log(` Player selection is ${playerSelection} Comp selection is ${computerSelection}`)
+    playGame(playerSelection, computerSelection)
+})
+scissors.addEventListener('click', ()=>{
+    playerSelection = 'Scissors'
+    /* Display computer choise */
+    let computerSelection = getComputerChoise()
+    console.log(` Player selection is ${playerSelection} Comp selection is ${computerSelection}`)
+    playGame(playerSelection, computerSelection)
+})
+
+function show(){
+    alert(playerSelection)
+}  
+
+/* Logic of the game */
+function playGame(player, computer){
+
+    if(player === computer){
         console.log("No one wins") 
+        document.getElementById('choise').innerHTML = `Your choise is ${player},Computer choise is ${computer} No one wins`
     }
-    // Rock
-    if(playerSelection === 'Rock' && computerSelection === 'Paper'){
+    if(player === 'Rock' && computer === 'Paper'){
         console.log("You luse Paper wins")
+        document.getElementById('choise').innerHTML = `Your choise is ${player},Computer choise is ${computer} You luse ${computer} wins`
     } 
-    if(playerSelection === 'Rock' && computerSelection === 'Scissors'){
+    if(player === 'Rock' && computer === 'Scissors'){
         console.log("You win Rock wins")
+        document.getElementById('choise').innerHTML = `Your choise is ${player},Computer choise is ${computer} You win ${player} wins`
     }
-    if(playerSelection === 'Paper' && computerSelection === 'Rock'){
-        console.log("You win Paper wins")
+    if(player === 'Paper' && computer === 'Rock'){
+        document.getElementById('choise').innerHTML = `Your choise is ${player},Computer choise is ${computer} You win ${player} wins`
     }
-    if(playerSelection === 'Paper' && computerSelection === 'Scissors'){
+    if(player === 'Paper' && computer === 'Scissors'){
         console.log("You luse Scissors wins")
+        document.getElementById('choise').innerHTML = `Your choise is ${player},Computer choise is ${computer} You luse ${computer} wins`
     }
-    if(playerSelection === 'Scissors' && computerSelection === 'Rock'){
+    if(player === 'Scissors' && computer === 'Rock'){
         console.log("You luse Rock wins")
+        document.getElementById('choise').innerHTML = `Your choise is ${player},Computer choise is ${computer} You luse ${computer} wins`
     }
-    if(playerSelection === 'Scissors' && computerSelection === 'Paper'){
+    if(player === 'Scissors' && computer === 'Paper'){
         console.log("You win Scissors wins")
+        document.getElementById('choise').innerHTML = `Your choise is ${player},Computer choise is ${computer} You win ${player} wins`
     }
-    console.log(`Player selection is ${playerSelection}`)
+   
 }
-playGame( "Rock", computerSelection)
+/* Get player choise and lod to variable */
+

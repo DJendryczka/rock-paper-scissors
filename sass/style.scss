@@ -25,10 +25,18 @@ h1{
     background-color: rgb(231, 238, 243);
     border: 1px solid black;
 }
-.game-img{
+
+.game-img,
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#play-game{
+    margin: 40px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
 }
 .choise{
     margin: 0 auto;

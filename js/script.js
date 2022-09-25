@@ -97,6 +97,15 @@ function playGame(player, computer){
         document.getElementById('result').innerHTML = `Your Score is ${playerScore}<br>Computer Score is ${computerScore}`
         
     }
+    if(playerScore === 5){
+        
+        document.getElementById('choise').innerHTML = `You win, reload page for another round`
+        console.log('You win')
+    }else if(computerScore === 5){
+        
+        document.getElementById('choise').innerHTML = `Computer win, reload page for another round`
+        console.log('Computer win')
+    }
    
 }
 
